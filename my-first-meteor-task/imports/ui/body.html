@@ -1,0 +1,72 @@
+
+
+<body>
+
+  
+
+  <div class="container">
+
+    <header>
+
+      <h1>Fill the Student Basic Info Form</h1>
+
+ <label class="hide-completed">
+	<input type="checkbox"/>
+	Hide Student Info
+ </label>
+ 
+ {{> loginButtons}}
+ 
+ 
+	{{#if currentUser}}
+      <form class="new-task">
+
+        <input type="text" name="name" placeholder="Type your name" />
+        <input type="text" name="email" placeholder="Type your Email address" />
+        <input type="text" name="phone" placeholder="Type your Phone Number"/>
+        <input type="text" name="dateOfBirth" placeholder="Type your Date of Birth" />
+
+		<button>Submit</button>
+      </form>
+	{{/if}}
+	  
+    </header>
+	
+		<div class="student-basic-info-list">
+
+			<h1>Student Basic Info List({{incompleteCount}})</h1>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Phone Number</th>
+						<th>Date of Birth</th>
+						<th>Action</th>
+						<th>User</th>
+						
+					</tr>
+				</thead>	
+
+				<tbody>	
+				
+					  {{#each tasks}}
+					  
+						{{> task}}
+
+					  {{/each}}
+
+				</tbody>	
+					
+			</table>
+		</div>
+  </div>
+
+</body>
+
+ 
+
+
+

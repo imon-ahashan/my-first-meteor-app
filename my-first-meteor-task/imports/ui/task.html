@@ -1,0 +1,40 @@
+<template name="task">
+
+  <tr class="{{#if checked}}checked{{/if}}">
+  
+     
+
+ 
+
+   
+				<td> <input type="checkbox" checked="{{checked}}" class="toggle-checked" /></td>
+				<td>    <span class="text">{{name}}</span></td>
+				<td>    <span class="text">{{email}}</span></td> 
+				<td>    <span class="text">{{phone}}</span></td> 
+				<td>    <span class="text">{{dateOfBirth}}</span></td>
+				<td>    <button class="delete">&times;</button></td>
+				<td>{{username}}</td>
+			
+				    {{#if isOwner}}
+
+      <button class="toggle-private">
+
+        {{#if private}}
+
+          Private
+
+        {{else}}
+
+          Public
+
+        {{/if}}
+
+      </button>
+
+    {{/if}}
+				
+				
+				 
+			</tr>
+
+</template>

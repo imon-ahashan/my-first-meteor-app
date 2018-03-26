@@ -1,0 +1,270 @@
+/* CSS declarations go here */
+body {
+
+  font-family: sans-serif;
+
+  background-color: #0e6618;
+
+  background-image: linear-gradient(to bottom, #0e6618, #89ff96 100%);
+
+  background-attachment: fixed;
+
+ 
+
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+ 
+
+  padding: 0;
+
+  margin: 0;
+
+ 
+
+  font-size: 14px;
+
+}
+
+ 
+
+.container {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  min-height: 100%;
+
+  background: white;
+
+}
+.container .student-basic-info-list{
+	text-align:center;
+	background-color:#d2d8d6;
+	margin: 15px 170px;
+	padding:10px 15px;
+}
+.container .student-basic-info-list table{
+	padding:10px;
+	border-collapse:collapse;
+}
+.container .student-basic-info-list table th{
+	background-color:#601658;
+	border: 1px solid #ffffff;
+	color:#ffffff;
+}
+.container .student-basic-info-list table td{
+	background-color:#8e5287;
+	border: 1px solid #ffffff;
+	color:#ffffff;
+}
+
+ 
+
+header {
+
+  background: #ea2309;
+
+  background-image: linear-gradient(to bottom, #ea2309, #ffb0a5 100%);
+
+  padding: 20px 15px 15px 15px;
+
+  position: relative;
+
+}
+
+ 
+
+#login-buttons {
+
+  display: block;
+
+}
+
+ 
+
+h1 {
+
+  font-size: 1.5em;
+
+  margin: 0;
+
+  margin-bottom: 10px;
+
+  display: inline-block;
+
+  margin-right: 1em;
+
+}
+
+ 
+
+form {
+
+  margin-top: 10px;
+
+  margin-bottom: -10px;
+
+  position: relative;
+
+}
+
+ 
+
+.new-task input {
+
+  box-sizing: border-box;
+
+  padding: 10px 0;
+
+  background: transparent;
+
+  border: none;
+
+  width: 100%;
+
+  padding-right: 80px;
+
+  font-size: 1em;
+
+}
+
+ 
+
+.new-task input:focus{
+
+  outline: 0;
+
+}
+
+ 
+
+ul {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: white;
+
+}
+
+ 
+
+.delete {
+
+  float: right;
+
+  font-weight: bold;
+
+  background: none;
+
+  font-size: 1em;
+
+  border: none;
+
+  position: relative;
+
+}
+
+ 
+
+li {
+
+  position: relative;
+
+  list-style: none;
+
+  padding: 15px;
+
+  border-bottom: #eee solid 1px;
+
+}
+
+ 
+
+li .text {
+
+  margin-left: 10px;
+
+}
+
+ 
+
+li.checked {
+
+  color: #888;
+
+}
+
+ 
+
+li.checked .text {
+
+  text-decoration: line-through;
+
+}
+
+ 
+
+li.private {
+
+  background: #eee;
+
+  border-color: #ddd;
+
+}
+
+ 
+
+header .hide-completed {
+
+  float: right;
+
+}
+
+ 
+
+.toggle-private {
+
+  margin-left: 5px;
+
+}
+
+ 
+
+@media (max-width: 600px) {
+
+  li {
+
+    padding: 12px 15px;
+
+  }
+
+ 
+
+  .search {
+
+    width: 150px;
+
+    clear: both;
+
+  }
+
+ 
+
+  .new-task input {
+
+    padding-bottom: 5px;
+
+  }
+
+}
